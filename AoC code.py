@@ -383,12 +383,12 @@ class Quick_Match(tk.Frame):
 
             def VsCpuOG(self,page):
                     import Vs_Cpu 
-                    board_GUI(black,white)
-                    newGameBoard()
-                    clock.tick(60)
-                    pygame.display.flip()
-                    drawGameStatusBox(black)
-                    drawPieces()
+                    # board_GUI(black,white)
+                    # newGameBoard()
+                    # clock.tick(60)
+                    # pygame.display.flip()
+                    # drawGameStatusBox(black)
+                    # drawPieces()
 
                     
                     
@@ -478,7 +478,7 @@ class snake(tk.Frame):
                     BackBtn.place(x=1, y=1)
 
         def playSnake(self,page):
-            from AoC_minigame import main
+            from Snake_minigame import main
             main()
             page.show_frame(Minigames)
             
@@ -662,12 +662,12 @@ class Shop(tk.Frame):
             tk.Frame.__init__(self,parent)
             self.config(bg=BgColour)
             self.frame=Frame(self,bg=BgColour)
-            self.J_sprite =PhotoImage(file='Jotaro_sprite.png')
-            self.K_sprite = PhotoImage(file='Kakyoin_sprite.png')
-            self.P_sprite = PhotoImage(file='Polnareff_sprite.png')
-            self.Av_sprite = PhotoImage(file='Avdol_sprite.png')
-            self.H_sprite = PhotoImage(file='Hatsune_sprite.png')
-            self.N_sprite=  PhotoImage(file='Nami_sprite.png')
+            self.J_sprite =PhotoImage(file='sprites/Jotaro_sprite.png')
+            self.K_sprite = PhotoImage(file='sprites/Kakyoin_sprite.png')
+            self.P_sprite = PhotoImage(file='sprites/Polnareff_sprite.png')
+            self.Av_sprite = PhotoImage(file='sprites/Avdol_sprite.png')
+            self.H_sprite = PhotoImage(file='sprites/Hatsune_sprite.png')
+            self.N_sprite=  PhotoImage(file='sprites/Nami_sprite.png')
             
             title =Label(self, text ='Shop', font= LargeFont, bg=BgColour)
             title.place(x=400, y=10)
@@ -833,13 +833,13 @@ class C_List(tk.Frame):
             tk.Frame.__init__(self,parent)
             self.config(bg=BgColour)
             self.frame=Frame(self,bg=BgColour)
-            self.A_sprite= PhotoImage(file='Ace_sprite.png')
-            self.J_sprite =PhotoImage(file='Jotaro_sprite.png')
-            self.K_sprite = PhotoImage(file='Kakyoin_sprite.png')
-            self.P_sprite = PhotoImage(file='Polnareff_sprite.png')
-            self.Av_sprite = PhotoImage(file='Avdol_sprite.png')
-            self.H_sprite = PhotoImage(file='Hatsune_sprite.png')
-            self.N_sprite=  PhotoImage(file='Nami_sprite.png')
+            self.A_sprite= PhotoImage(file='sprites/Ace_sprite.png')
+            self.J_sprite =PhotoImage(file='sprites/Jotaro_sprite.png')
+            self.K_sprite = PhotoImage(file='sprites/Kakyoin_sprite.png')
+            self.P_sprite = PhotoImage(file='sprites/Polnareff_sprite.png')
+            self.Av_sprite = PhotoImage(file='sprites/Avdol_sprite.png')
+            self.H_sprite = PhotoImage(file='sprites/Hatsune_sprite.png')
+            self.N_sprite=  PhotoImage(file='sprites/Nami_sprite.png')
             
             title =Label(self, text ='Character List', font= LargeFont, bg=BgColour)
             title.place(x=330, y=10)
